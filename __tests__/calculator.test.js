@@ -20,4 +20,8 @@ describe('divide', ()=>{
     it('throws when a is NaN', ()=>{
         expect(()=>divide(6,NaN)).toThrow('Arguments cannot be NaN');
     });
+
+    it('throws when b is 0', ()=>{
+        expect(()=>divide(6,0)).toThrow('Division by zero is not allowed');
+    });
 })
